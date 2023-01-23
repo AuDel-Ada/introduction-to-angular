@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HousingListComponent } from './housing-list/housing-list.component';
+import { AdvicesListComponent } from './advices-list/advices-list.component';
+import { UsefulLinksComponent } from './useful-links/useful-links.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HousingListComponent
+    AdvicesListComponent,
+    UsefulLinksComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,27 @@
 <main>
-  <header><img src="../assets/logo.svg">Fairhouse</header>
+  <header><img src="../assets/runner.svg" alt="dessin d'une personne en course">{{ title }}</header>
+  
+
   <section>
-    <app-housing-list [locationList]="housingLocationList" (locationSelectedEvent)="updateSelectedLocation($event)">
-    </app-housing-list>
-    <article>
-      <ng-container *ngIf="selectedLocation">
-        <img [src]="selectedLocation?.photo">
-        <p>{{selectedLocation?.name}}</p>
-        <p>{{selectedLocation?.city}}, {{selectedLocation?.state}}</p>
-        <p>Available Units: {{selectedLocation?.availableUnits}}</p>
-        <p>{{selectedLocation?.laundry ? "Has laundry" : "Does Not have laundry"}}</p>
-        <p>{{selectedLocation?.wifi ? "Has wifi" : "Does Not have wifi"}}</p>
-      </ng-container>
-    </article>
+    <app-advices-list 
+      [advicesDetailsList] = "advicesDetailsList"
+      (categorySelectedEvent)="updateSelectedCategory($event)"></app-advices-list>
   </section>
+
+  <article>
+    <p> {{ selectedCategory?.learnMore }} </p>
+  </article>
+
+
+  <!-- <nav> 
+    <p>Pour la liste complète -></p>
+    <a routerLink="/list">Clickez-moi !</a>
+    <router-outlet></router-outlet>
+  </nav> -->
+
+  
+  <section>
+    <app-useful-links></app-useful-links>
+  </section>
+
 </main>

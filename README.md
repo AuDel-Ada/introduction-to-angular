@@ -1,11 +1,8 @@
-# Introduction to Angular Codelab
+# Introduction to Angular
 
-In this codelab, you'll build a housing app with Angular. This is the completed app and features the ability to view home listings based on user search, and view details of a housing location.
+Based on the YouTube tuto on GoogleChrome Developpers channel,
+this app allows me to train myself on the Angular framework, while offering an information platform, about the preparation of a half-marathon !
 
-You'll build everything with Angular using Angular's powerful tooling and great browser integration.
 
-Here's a preview of the application:
-
-![Completed application - one column search results, second column search details](9yB5AM9sBgVwfTR.png)
 
 The step-by-step guide can be found at [https://codelabs.developers.google.com/introduction-to-angular](https://codelabs.developers.google.com/introduction-to-angular)

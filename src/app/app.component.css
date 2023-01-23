@@ -11,39 +11,39 @@ header {
 header > img {
     width: 28pt;
     height: 29pt
-}
-section {
+}  
+section, nav, article {
     margin-left: 50px;
     margin-right: 50px;
 }
-section {
-    display: flex;
-    justify-content: space-between;
-}
 
 article {
-    margin-left: 50px;
     padding-top: 20px;
     width: 50%
 }
 
-article, p {
+article, nav, p {
     color: #202845;
+    font-size: 12pt;
 }
+nav {
+    display: flex;
+    margin-bottom: 50px;
+}
+
 img {
     border-radius: 5px;
     width: 100%;
 }
 article > p:nth-child(n+2) {
-    font-size: 15pt;
+    font-size: 12pt;
 }
 
 article > p:first-of-type {
-    font-size: 40pt;
-    font-weight: bold;
+    font-size: 12pt;
 }
 
 article > p:nth-of-type(2) {
-    font-size: 30pt;
+    font-size: 12pt;
     margin-bottom: 15px;
 }

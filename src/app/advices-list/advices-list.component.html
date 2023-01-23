@@ -1,0 +1,22 @@
+<label for="category-search">Rechercher une catégorie de conseils</label>
+<input 
+    id="category-search" #search 
+    placeholder="Ex: Alimentation"
+    (keyup.enter)="searchCategory(search.value)"
+>
+
+<button (click)="searchCategory(search.value)">Recherche</button>
+
+<article *ngFor="let category of results">
+
+    <p> {{category.category}} </p>
+    <p> {{category.beginnerEspecially ? "Pour les débutants surtout !" : "Pour tout le monde !"}} </p>
+    <p> {{category.text1}} </p>
+    
+    <ng-container *ngIf="category.learnMore.trim().length !== 0">
+        <button (click)="selectCategory(category)">En savoir plus</button>
+        
+        <p hidden> {{ category.learnMore }} </p>
+    </ng-container>
+
+</article>

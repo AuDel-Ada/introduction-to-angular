@@ -1,0 +1,36 @@
+h2 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.useful-links-line {
+  display: flex;
+  justify-content: space-around
+}
+  
+.useful-link-card {
+  box-sizing: border-box;
+  width: 40%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  border-radius: 5px;
+  img {
+    width: 100%;
+  }
+}
+
+div > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.vote {
+  display: flex;
+  justify-content: space-around
+}
+
+button {
+  width: 60px;
+  height: 30px;
+}

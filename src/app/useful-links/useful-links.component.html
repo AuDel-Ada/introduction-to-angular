@@ -1,0 +1,18 @@
+<h2>Liens utiles :</h2>
+
+<section class="useful-links-line">
+
+    <div class="useful-link-card" *ngFor="let link of usefulLinksList">
+
+        <img [src]="link.url" [alt]="link.title"/>
+        <h2> {{link.title}} </h2>
+        <p> {{link.text}} </p>
+
+        <div class="vote">
+            <button (click)="onVote(link.buttonText, link.star)"> {{link.buttonText}} </button>
+            <p [ngStyle]="{ color: 'rgb(0, ' + link.star + ', 0)' }"> 🤌 {{ link.star }} </p>
+        </div>
+
+    </div>
+
+</section>
